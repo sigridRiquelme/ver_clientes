@@ -5,7 +5,8 @@ while True:
     print("1- registrar cliente")
     print("2- consultar cliente")
     print("3- eliminar cliente")
-    print("4- salir")
+    print("4- ver todos los clientes")
+    print("5- salir")
 
     op = input("ingrese una opcion (1-4): ")
 
@@ -57,6 +58,15 @@ while True:
             print("El cliente no se encuentra registrado")
 
     elif op == "4":
+        if not clientes:
+            print("no hay clientes registrados")
+        
+        else:
+            print(clientes)
+
+        
+
+    elif op == "5":
         print("hasta pronto...")
         break
 
